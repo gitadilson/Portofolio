@@ -1,0 +1,451 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente os itens */
+    background-color: rgb(252, 252, 252);  
+    padding: 20px; /* Reduzindo o padding para telas menores */
+}
+
+header h3 {
+    font-family: Magneto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+ul li a {
+    color: rgb(46, 32, 32);
+    padding: 10px 15px; /* Ajustando o padding */
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container img {
+    width: 100%; /* Responsivo */
+    max-height: 600px; /* Define a altura máxima */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.texto {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.butoes1 {
+    display: flex;
+    justify-content: center; /* Alinha os botões no centro */
+    gap: 30px;
+    margin-top: 1px;   
+  
+}
+
+.butoes2 {
+    display: flex;
+    justify-content: center; /* Alinha os botões no centro */
+    gap: 5px;
+    margin-top: 20px;
+
+}
+
+.butao {
+    padding: 20px 20px;
+    font-size: 15px;
+    color: rgb(120, 164, 221);
+    background-color: rgba(246, 247, 250, 0.863);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.butao:hover {
+    background-color: rgba(0, 123, 255, 1);
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca os itens em coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    ul {
+        flex-direction: column; /* Coloca os links em coluna */
+        margin: 10px 0; /* Adiciona margem entre a lista e o resto */
+    }
+
+    .texto {
+        font-size: 20px; /* Ajusta o tamanho da fonte */
+    }
+
+    .butao {
+        font-size: 5px; /* Ajusta o tamanho da fonte dos botões */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px; /* Reduz o padding para telas muito pequenas */
+    }
+
+    .texto {
+        font-size: 18px; /* Ajusta ainda mais o tamanho da fonte */
+    }
+}
+
+
+
+.botoes2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    top: 55%;
+}
+
+.botao {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(249, 249, 252);
+    background-color: rgba(255, 255, 255, 0.062);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: rgb(201, 211, 221);
+}
+
+.desenvol, .desenvo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha */
+    justify-content: space-between;
+}
+
+.desenvol {
+    background-color: azure;
+}
+
+.desenvo {
+    background-color: rgba(199, 201, 194, 0.671);
+}
+
+.desenvol h1, .desenvo h1 {
+    margin-top: 22px; /* Ajuste dos valores para uma melhor responsividade */
+    margin-left: 20px; /* Reduzido para telas menores */
+}
+
+.desenvol h4, .desenvo h4 {
+    margin-top: 10px; /* Ajuste dos valores para uma melhor responsividade */
+    margin-right: 20px; /* Reduzido para telas menores */
+    margin-left: 20px; /* Reduzido para telas menores */
+}
+
+.desenvo img {
+    width: 100%; /* Define a imagem para ocupar 100% do espaço disponível */
+    max-width: 350px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    padding: 20px; /* Ajuste do padding para telas menores */
+    margin-right: 20px; /* Reduzido para telas menores */
+}
+
+.desenvo img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .desenvol, .desenvo {
+        flex-direction: column; /* Muda a direção dos itens para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .desenvol h1, .desenvo h1 {
+        margin-left: 0; /* Remove a margem esquerda */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .desenvol h4, .desenvo h4 {
+        margin-right: 0; /* Remove a margem direita */
+        margin-left: 0; /* Remove a margem esquerda */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 10px; /* Ajusta a margem superior */
+    }
+
+    .desenvo img {
+        margin-right: 0; /* Remove a margem direita */
+        padding: 20px 0; /* Ajusta o padding vertical */
+    }
+}
+
+@media (max-width: 480px) {
+    .desenvol h1, .desenvo h1 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    }
+
+    .desenvol h4, .desenvo h4 {
+        font-size: 1em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    }
+}
+
+
+.desenv {
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna em telas pequenas */
+    align-items: center; /* Centraliza os itens */
+    padding: 20px; /* Adiciona um pouco de padding */
+}
+
+.desenv h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.desenv h4 {
+    color: white;
+    text-align: center;
+    max-width: 800px; /* Limita a largura do texto para melhorar a legibilidade */
+    margin: 20px 0; /* Margem para espaçamento */
+}
+
+.desenv img {
+    width: 100%; /* Responsivo */
+    max-width: 350px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    padding: 20px; /* Ajuste de padding */
+    margin-top: 20px; /* Reduz o espaço superior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.desenv img:hover {
+    transform: scale(1.05); /* Aumenta a imagem um pouco */
+}
+
+/* Media Queries para responsividade */
+@media (min-width: 768px) {
+    .desenv {
+        flex-direction: row; /* Em telas maiores, coloca os itens em linha */
+        flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
+        justify-content: center; /* Centraliza as imagens */
+    }
+
+    .desenv img {
+        margin: 20px; /* Margem para espaçamento */
+        padding: 0; /* Remove padding em telas maiores */
+    }
+}
+
+
+.desen{
+    background-color: black;
+    display: flex;   
+}
+
+.cccc {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px; /* Adiciona padding para melhor espaçamento */
+}
+
+.bandido {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna em telas menores */
+    align-items: center; /* Centraliza o conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+.bandido h1 {
+    color: white;
+    margin-top: 40px;
+}
+
+.bandido p {
+    color: white;
+    margin-top: 20px;
+    max-width: 800px; /* Limita a largura do texto */
+}
+
+.bandida {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
+    justify-content: center; /* Centraliza as imagens */
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+}
+
+.img {
+    display: flex;
+    flex-direction: column; /* Coloca o texto e o botão abaixo da imagem */
+    align-items: center; /* Centraliza o conteúdo dentro da imagem */
+    margin: 15px; /* Adiciona margem entre os itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+.bandida img {
+    width: 100%; /* Responsivo */
+    max-width: 350px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto2 {
+    color: white;
+    margin: 10px 0; /* Espaçamento entre o texto e o botão */
+}
+
+button {
+    color: white;
+    background-color: rgba(240, 248, 255, 0.082);
+    border: 1px solid white;
+    width: 90px;
+    height: 25px;
+    margin-top: 10px; /* Margem acima do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+button:hover {
+    background-color: rgba(0, 123, 255, 1);
+}
+
+/* Media Queries para responsividade */
+@media (min-width: 768px) {
+    .bandido {
+        flex-direction: row; /* Em telas maiores, coloca os itens em linha */
+        justify-content: space-between; /* Espaça os elementos */
+        align-items: flex-start; /* Alinha os elementos ao topo */
+    }
+
+    .bandida {
+        justify-content: space-between; /* Espaça as imagens em telas grandes */
+    }
+}
+
+
+.mato {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    justify-content: space-around; /* Espaça os itens */
+    padding: 20px; /* Adiciona padding para melhor espaçamento */
+}
+
+.matagal1 {
+    background-color: rgba(0, 85, 212, 0.836);
+    width: 100%; /* Responsivo */
+    max-width: 330px; /* Largura máxima da coluna */
+    height: auto; /* Altura automática */
+    color: white;
+    margin: 20px; /* Espaçamento entre os itens */
+    padding: 20px; /* Padding interno */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+}
+
+.matagal1 img {
+    margin-top: 10px; /* Espaçamento acima da imagem */
+}
+
+.star {
+    margin-bottom: 10px; /* Espaçamento abaixo das estrelas */
+}
+
+.blug {
+    background-color: rgb(255, 251, 251);
+    padding: 20px; /* Adiciona padding para melhor espaçamento */
+    text-align: center; /* Centraliza o texto */
+}
+
+.son-insijhts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsividade com grid */
+    gap: 15px;
+    padding: 20px; /* Adiciona padding */
+}
+
+.latist {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem acima do texto */
+    background-color: rgb(235, 241, 241);
+    border-radius: 5px;
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.latist:hover {
+    transform: scale(1.02); /* Efeito de hover */
+}
+
+.latist .image {
+    width: 100%; /* Largura total */
+    overflow: hidden;
+}
+
+.latist img {
+    width: 100%; /* Largura total */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.son-lateso {
+    padding: 10px; /* Adiciona padding ao texto */
+}
+
+.son-lateso p, .son-lateso h3 {
+    color: rgb(12, 9, 9);
+    text-align: left; /* Mantém o texto alinhado à esquerda */
+    margin: 0; /* Remove margens para melhor controle de layout */
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    justify-content: space-around; /* Espaça os itens */
+    padding: 20px; /* Adiciona padding */
+}
+
+.icon-footer {
+    display: flex; /* Flexbox para ícones */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 10px; /* Espaçamento entre ícones */
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+    margin: 20px; /* Espaçamento */
+}
+
+/* Media Queries para responsividade */
+@media (min-width: 768px) {
+    .mato {
+        flex-direction: row; /* Em telas maiores, organiza em linha */
+    }
+
+    .blug button {
+        margin-left: 0; /* Remove margens em telas maiores */
+    }
+
+    .son-insijhts {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas em telas maiores */
+    }
+}

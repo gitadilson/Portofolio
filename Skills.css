@@ -1,0 +1,11 @@
+.skill{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 210px;
+}
+
+.skills{
+    text-align: center;
+}
+
+

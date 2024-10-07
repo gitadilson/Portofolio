@@ -1,0 +1,60 @@
+.Blog{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.blog{
+    margin-top: 100px;
+    margin-left: 100px;  
+}
+
+.blog button{
+    margin-left: 1500px;
+    color: rgb(0, 153, 255);
+    background-color: rgb(244, 248, 248);
+    border: 1px solid black;
+}
+
+.son-insights{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.latest{
+    display: flex;
+    background-color: rgb(241, 247, 247);
+    border-radius: 5px;
+    width: 85%;                                                              
+    height: 70%;
+    margin: 5%;
+    transition: transform 0.3;
+}
+
+.latest:hover{
+    transform: scale(1.02);
+}
+.latest .image{
+    width: 50%;
+    overflow: hidden;
+}
+
+.latest img{
+    width: 100%;
+    height: auto;
+}
+
+.son-latest {
+    width: 30%;
+}
+
+.son-latest p,.son-latest h3{
+color: rgb(17, 13, 13);
+text-align: left;
+margin-left: 20px;
+}
+
+.latest img:hover{
+    transform: scale(1.3);
+    transition: 0.7s ease;
+}
